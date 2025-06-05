@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shalom</title>
+    <link rel="stylesheet" href="css/Pasteleria.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav {
+            background-color: #f8c4c4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        header input {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+
+        .botones {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .botones button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #f89cab;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .lista-menu {
+            list-style: none;
+            padding: 0;
+            margin-left: 20px;
+        }
+
+        .lista-menu li {
+            margin-bottom: 10px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .galeria img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #f8c4c4;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .redes-sociales a {
+            margin: 0 10px;
+            color: #333;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .redes-sociales a:hover {
+            color: #f0456c;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <div>☰ Menu</div>
+            <input type="text" placeholder="Buscar postres...">
+            <div>
+                <span>🛒</span>
+                <span>👤</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Imagen principal -->
+    <section class="hero">
+        <img src="img/12.jpg" alt="Banner principal" class="banner">
+    </section>
+
+    <!-- Botones -->
+    <section class="botones">
+        <button>Pasteles</button>
+        <button>Galletas</button>
+        <button>Tartas</button>
+        <button>Especiales</button>
+    </section>
+
+    <!-- Contenido con menú lateral -->
+    <section style="display: flex; margin-top: 20px;">
+        <aside style="width: 20%;">
+            <ul class="lista-menu">
+                <li>Dulces</li>
+                <li>Salado</li>
+                <li>Tortas</li>
+                <li>Postres</li>
+            </ul>
+        </aside>
+        <div style="width: 80%;">
+            <img src="img/13.webp" alt="Contenido" class="banner" style="width: 100%;">
+        </div>
+    </section>
+
+    <!-- Sección con texto e imagen -->
+    <section style="display: flex; margin-top: 20px; flex-wrap: wrap;">
+        <img src="img/14.jpg" alt="Producto destacado" style="width: 50%; min-width: 300px;">
+        <div style="padding: 20px; flex: 1;">
+            <p>
+                Las mejores recetas de pastelería, desde pasteles clásicos hasta innovadoras creaciones.
+                Descubre nuestra variedad de productos frescos y deliciosos, elaborados con los mejores ingredientes.
+            </p>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="galeria">
+        <img src="img/13.webp" alt="Postre 1">
+        <img src="img/11.jpg" alt="Postre 2">
+        <img src="img/15.jpeg" alt="Postre 3">
+        <img src="img/16.jpg" alt="Postre 4">
+        <img src="img/17.jpg" alt="Postre 5">
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Dulces Tentaciones. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://facebook.com/tu_pagina" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/tu_pagina" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5491112345678" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
